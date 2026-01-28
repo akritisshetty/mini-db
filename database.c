@@ -1,18 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "database.h"
 
 #define SIZE 100
 
 /* RECORD */
-
-typedef struct Record {
-    int id;
-    char name[50];
-    int age;
-    float cgpa;
-    struct Record *next;
-} Record;
 
 Record *head = NULL;
 Record *hashTable[SIZE];
